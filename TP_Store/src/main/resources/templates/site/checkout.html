@@ -10,7 +10,7 @@
 <div  th:fragment="main">
 <div style="margin-top:100px">
     <h1 class="pay-title">Thanh Toán</h1>
-
+    <form id="form-checkout" action="" method="post">
     <div class="pay-header">
         <div class="pay-content-left">
             <h2>Phương Thức Thanh Toán</h2>
@@ -54,7 +54,7 @@
                         <span><strong style="color: #000" th:text="${p.tps_Price}"></strong></span>
                     </li>
                 </ul>
-                <button id="pay-btn">Thanh toán</button>
+                <button type="submit" id="pay-btn">Thanh toán</button>
             </div>
 <!--            <div class="pay-boxed-bottom">-->
 <!--                <div class="kich-hoat">-->
@@ -104,7 +104,7 @@
 <!--            </div>-->
         </div>
     </div>
-
+    </form>
     <script src="/js/app.js"></script>
     <script src="/js/main.js"></script>
     <script
